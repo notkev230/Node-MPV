@@ -14,6 +14,7 @@ interface NodeMpvOptions {
 	time_update?: number;
 	binary?: string | null; // Changed from string to string | null
     ipcCommand?: '--input-unix-socket' | '--input-ipc-server' | null; // Added ipcCommand
+    force_window?: boolean; // Force creation of a video output window
     [key: string]: any; // Allow other mpv options
 }
 
